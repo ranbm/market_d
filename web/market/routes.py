@@ -1,8 +1,8 @@
 from flask import flash, redirect, render_template, request, url_for
 from flask_login import current_user, login_required, login_user, logout_user
-from market import app, db
-from market.forms import LoginForm, PurchaseItemForm, RegisterForm, SellItemForm
-from market.models import Item, User
+from web.market.app_config import app, db
+from web.market.forms import LoginForm, PurchaseItemForm, RegisterForm, SellItemForm
+from web.market.models import Item, User
 
 
 @app.route("/")

@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from market.models import User
+from web.market.models import User
 from wtforms import HiddenField, PasswordField, StringField, SubmitField
 from wtforms.validators import DataRequired, Email, EqualTo, Length, ValidationError
 
